@@ -1,4 +1,4 @@
-# FadeAnimation
+# ⭐ FadeAnimation
 An App Inventor extension to fade your visible components.
 
 Taken from this Stack Overflow answer.
