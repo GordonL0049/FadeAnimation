@@ -7,7 +7,7 @@ https://stackoverflow.com/questions/6796139/fade-in-fade-out-android-animation-i
 
 **:package:** Package name: com.gordonlu.fadeanimation.FadeAnimation.aix
 
-**:clock1:** Version: 1
+**:clock1:** Version: 2
 
 **:date:** Release date: 2022-03-15T12:30:00Z
 
