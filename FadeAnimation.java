@@ -15,6 +15,7 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.AccelerateInterpolator;
 import java.lang.Object;
+import android.view.animation.AnimationSet;
 
 @DesignerComponent(
         version = 1,
@@ -40,8 +41,6 @@ public class FadeAnimation extends AndroidNonvisibleComponent {
         this.activity = container.$context();
         this.context = container.$context();
     }
-  
-  // https://stackoverflow.com/questions/6796139/fade-in-fade-out-android-animation-in-java/6822116#6822116
 
     @SimpleFunction(description = "Applies fade-in animation for the given component.")
     public void FadeIn(AndroidViewComponent component, int duration) {
@@ -55,7 +54,7 @@ public class FadeAnimation extends AndroidNonvisibleComponent {
     @SimpleFunction(description = "Applies fade-out animation for the given component.")
     public void FadeOut(AndroidViewComponent component, int duration, int startOffset) {
         View view = component.getView(); 
-        Animation fadeOut = new AlphaAnimation(0, 1);
+        Animation fadeOut = new AlphaAnimation(1, 0);
         fadeOut.setInterpolator(new AccelerateInterpolator()); //add this
         fadeOut.setDuration(duration);
         fadeOut.setStartOffset(startOffset);
